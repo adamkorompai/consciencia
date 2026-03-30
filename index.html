@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>CONSCIENCIA | Joanna Sullivan - Transformational Leadership & Shamanic Healing</title>
+    <meta name="description" content="Bridge global systems with soul wisdom. Shamanic Kundalini yoga, breathwork, and conscious leadership for transformational change. Retreats in Ibiza, France, Italy & Switzerland.">
+    <meta name="keywords" content="shamanic kundalini yoga, conscious leadership, transformational retreats, breathwork, feminine leadership, sustainability, Joanna Sullivan, sacred healing, Brussels">
+    <meta name="author" content="Joanna Sullivan">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.inconsciousmovement.com/">
+    <meta property="og:title" content="CONSCIENCIA | Joanna Sullivan">
+    <meta property="og:description" content="I bridge the world of sustainability with the wisdom of the soul. Inner peace for world peace.">
+    <meta property="og:image" content="https://www.inconsciousmovement.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.inconsciousmovement.com/">
+    <meta property="twitter:title" content="CONSCIENCIA | Joanna Sullivan">
+    <meta property="twitter:description" content="I bridge the world of sustainability with the wisdom of the soul. Inner peace for world peace.">
+    <meta property="twitter:image" content="https://www.inconsciousmovement.com/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --mocha: #A47864;
+            --deep-earth: #6B4E3D;
+            --warm-cream: #F5EDE4;
+            --sage: #8B9D83;
+            --terracotta: #C86B4F;
+            --gold: #D4A574;
+            --charcoal: #3A3330;
+            --soft-white: #FDFBF7;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.8;
+            color: var(--charcoal);
+            background: var(--soft-white);
+            font-size: 17px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            color: var(--deep-earth);
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 1rem; }
+        h2 { font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 1.5rem; }
+        h3 { font-size: clamp(1.3rem, 3vw, 1.9rem); margin-bottom: 0.8rem; }
+
+        /* Navigation */
+        nav {
+            background: rgba(253, 251, 247, 0.98);
+            backdrop-filter: blur(15px);
+            padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(164, 120, 100, 0.15);
+        }
+
+        .nav-wrap {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--mocha);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+
+        .spiral {
+            width: 42px;
+            height: 42px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        nav ul a:hover { color: var(--mocha); }
+
+        /* Mobile Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--mocha);
+            transition: all 0.3s;
+            border-radius: 3px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        /* Page System */
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* Container */
+        .wrap {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(180deg, var(--warm-cream) 0%, var(--soft-white) 100%);
+            padding: 5rem 2rem;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero h1 { color: var(--mocha); }
+
+        .sub {
+            font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+            color: var(--deep-earth);
+            font-style: italic;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+
+        .desc {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--charcoal);
+            opacity: 0.8;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.2rem;
+            margin: 0.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            cursor: pointer;
+            background: none;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--mocha);
+            color: white;
+            box-shadow: 0 4px 15px rgba(164, 120, 100, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--deep-earth);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--mocha);
+            border: 2px solid var(--mocha);
+        }
+
+        .btn-secondary:hover {
+            background: var(--mocha);
+            color: white;
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .bg-cream { background: var(--warm-cream); }
+        .bg-sage { background: linear-gradient(180deg, var(--soft-white) 0%, #e8ebe7 100%); }
+        .bg-gradient { 
+            background: linear-gradient(135deg, var(--warm-cream) 0%, #f0e8e0 50%, var(--soft-white) 100%);
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 3.5rem;
+            color: var(--deep-earth);
+        }
+
+        /* Image Placeholders */
+        .img-ph {
+            background: linear-gradient(135deg, var(--warm-cream), #e8dfd6);
+            border: 2px dashed var(--mocha);
+            opacity: 0.7;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 12px;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            color: var(--charcoal);
+        }
+
+        .img-ph strong {
+            display: block;
+            color: var(--mocha);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin: 2.5rem 0;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 25px rgba(107, 78, 61, 0.08);
+            transition: all 0.3s;
+            border-top: 3px solid var(--mocha);
+        }
+
+        .card:nth-child(2) { border-top-color: var(--sage); }
+        .card:nth-child(3) { border-top-color: var(--terracotta); }
+        .card:nth-child(4) { border-top-color: var(--gold); }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 35px rgba(107, 78, 61, 0.15);
+        }
+
+        .card h3 { color: var(--deep-earth); }
+
+        /* Pillars */
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .pillar {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(107, 78, 61, 0.08);
+            transition: all 0.3s;
+        }
+
+        .pillar:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 30px rgba(107, 78, 61, 0.12);
+        }
+
+        .pillar h3 { margin-top: 1rem; }
+
+        .pillar:nth-child(1) { border-left: 4px solid var(--mocha); }
+        .pillar:nth-child(2) { border-left: 4px solid var(--sage); }
+        .pillar:nth-child(3) { border-left: 4px solid var(--terracotta); }
+        .pillar:nth-child(4) { border-left: 4px solid var(--gold); }
+
+        /* Bio */
+        .bio-section {
+            max-width: 900px;
+            margin: 3rem auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 25px rgba(107, 78, 61, 0.08);
+        }
+
+        .bio-section h3 {
+            color: var(--mocha);
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .bio-section p {
+            margin-bottom: 1.5rem;
+            line-height: 1.9;
+        }
+
+        /* Form */
+        .form-box {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            max-width: 650px;
+            margin: 2.5rem auto;
+            box-shadow: 0 6px 25px rgba(107, 78, 61, 0.08);
+        }
+
+        .form-group {
+            margin-bottom: 1.3rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--charcoal);
+            font-weight: 500;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.9rem;
+            border: 2px solid var(--warm-cream);
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--mocha);
+        }
+
+        input.error, select.error, textarea.error {
+            border-color: var(--terracotta);
+        }
+
+        .error-message {
+            color: var(--terracotta);
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+            display: none;
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .gdpr-notice {
+            font-size: 0.85rem;
+            color: var(--charcoal);
+            opacity: 0.7;
+            margin-top: 1rem;
+            line-height: 1.6;
+        }
+
+        .success-message {
+            background: var(--sage);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--deep-earth) 0%, var(--mocha) 100%);
+            color: white;
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover { opacity: 0.8; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-wrap { 
+                justify-content: space-between;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            nav ul {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 0;
+                padding-top: 1rem;
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            nav ul a {
+                padding: 0.8rem 0;
+                display: block;
+            }
+            
+            .grid, .pillars { 
+                grid-template-columns: 1fr; 
+            }
+            
+            section { 
+                padding: 3rem 1rem; 
+            }
+            
+            .bio-section, .form-box { 
+                padding: 2rem; 
+            }
+
+            .book-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Book grid for larger screens */
+        .book-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+            margin-bottom: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrap">
+        <a href="#" class="logo" onclick="showPage('home')">
+            <svg class="spiral" viewBox="0 0 100 100" aria-label="CONSCIENCIA logo">
+                <path d="M50 50 Q55 45 60 50 Q65 60 55 65 Q40 70 35 55 Q30 35 50 30 Q75 25 80 50 Q85 80 50 85 Q15 90 10 50 Q5 10 50 5" 
+                      fill="none" stroke="#A47864" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <span>CONSCIENCIA</span>
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="nav-menu">
+            <li><a onclick="showPage('home')">Home</a></li>
+            <li><a onclick="showPage('journey')">My Journey</a></li>
+            <li><a onclick="showPage('offerings')">Offerings</a></li>
+            <li><a onclick="showPage('retreats')">Retreats</a></li>
+            <li><a onclick="showPage('book')">The Feminine Shift</a></li>
+            <li><a onclick="showPage('contact')">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HOME PAGE -->
+<div id="home" class="page active">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Joanna Sullivan</h1>
+            <p class="sub">I bridge the world of sustainability with the wisdom of the soul</p>
+            <p class="desc"><em>Inner peace for world peace</em></p>
+
+            <div class="img-ph" style="height: 320px; margin: 2rem 0;">
+                <strong>HERO IMAGE</strong><br>
+                You in ceremony at sacred site (landscape, high-resolution)<br>
+                Keywords: shamanic ceremony, sacred ritual, spiritual transformation, conscious leadership
+            </div>
+
+            <div>
+                <a onclick="showPage('contact')" class="btn btn-primary">Book a Discovery Call</a>
+                <a href="#newsletter" class="btn btn-secondary" onclick="smoothScroll('newsletter')">Join the Wait List</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-cream">
+        <div class="wrap">
+            <h2 class="section-title">Bridging Global Systems and Ancient Wisdom</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="img-ph" style="height: 200px;">
+                        <strong>Brussels/UN Image</strong><br>
+                        Keywords: EU policy, sustainability leadership, climate action, Brussels
+                    </div>
+                    <h3>30 Years Leading Transformation</h3>
+                    <p>Navigating the corridors of power, advocating for climate, nature and healthy food systems.</p>
+                </div>
+                <div class="card">
+                    <div class="img-ph" style="height: 200px;">
+                        <strong>Sacred Sites Image</strong><br>
+                        Keywords: sacred sites, spiritual journey, India Peru Mexico Egypt, soul awakening
+                    </div>
+                    <h3>A Decade-Long Soul Journey</h3>
+                    <p>Seeking ancient wisdom and somatic practices in sacred sites across India, Peru, Mexico, Egypt, China and Japan.</p>
+
+                <div class="img-ph" style="height: 300px; margin: 2rem 0;">
+                    <strong>JOURNEY IMAGE</strong><br>
+                    You at sacred site (India, Peru, Mexico, Egypt, China or Japan)<br>
+                    Keywords: sacred sites, spiritual journey, shamanic practice, ancient wisdom
+                </div>
+
+                </div>
+                <div class="card">
+                    <div class="img-ph" style="height: 200px;">
+                        <strong>Teaching Image</strong><br>
+                        Keywords: shamanic kundalini yoga, breathwork teaching, healing ceremony
+                    </div>
+                    <h3>Now: Guiding Your Transformation</h3>
+                    <p>Creating space to ground your deepest wisdom and lead with clarity.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a onclick="showPage('journey')" class="btn btn-primary">Read My Full Story</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-sage">
+        <div class="wrap">
+            <h2 class="section-title">If you've achieved so much yet feel something essential calling you inward,this work is for you</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Leaders in Transition</h3>
+                    <p>You've led teams, organisations or movements. Now you're ready to lead from a deeper place.</p>
+                </div>
+                <div class="card">
+                    <h3>Dreamers Seeking Vitality</h3>
+                    <p>You've given everything to your mission. Now it's time to reclaim your energy and rediscover joy.</p>
+                </div>
+                <div class="card">
+                    <h3>Women in Evolution</h3>
+                    <p>You've created and contributed. Now something essential is calling you to shift towards a more meaningful future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <h2 class="section-title">An Integrated Approach</h2>
+            <div class="pillars">
+                <div class="pillar">
+                    <h3>Shamanic Kundalini Yoga, Breathwork & Meditation</h3>
+                    <p>For energy activation, somatic release and nervous system regulation</p>
+                </div>
+                <div class="pillar">
+                    <h3>Conscious Leadership & Transformation Strategies</h3>
+                    <p>Grounded in positive psychology to guide you through deep shifts</p>
+                </div>
+                <div class="pillar">
+                    <h3>Ceremony & Energy Healing</h3>
+                    <p>Sacred practices for deep healing and spiritual connection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="wrap" style="text-align: center;">
+            <h2 class="section-title">Join the Wait List</h2>
+            <p style="max-width: 700px; margin: 0 auto 2.5rem; font-size: 1.1rem;">Be the first to hear about upcoming retreats, moon ceremonies, online circles and insights from The Feminine Shift journey</p>
+            <div class="form-box">
+                <form name="newsletter" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="hidden" name="form-name" value="newsletter">
+                    <p style="display: none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    <div class="form-group">
+                        <input type="text" name="name" id="newsletter-name" placeholder="Your name" required>
+                        <span class="error-message" id="newsletter-name-error">Please enter your name</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="newsletter-email" placeholder="Your email address" required>
+                        <span class="error-message" id="newsletter-email-error">Please enter a valid email address</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Join the Wait List</button>
+                    <p class="gdpr-notice">
+                        Your email will never be shared with third parties. You can unsubscribe at any time.
+                        By signing up, you agree to receive updates about retreats, events, and The Feminine Shift journey.
+                    </p>
+                    <div class="success-message" id="newsletter-success">
+                        ✓ Thank you! You've successfully joined CONSCIENCIA.
+                    </div>
+                    <div class="error-message" id="newsletter-network-error" style="display:none; margin-top:1rem;">
+                        Something went wrong. Please try again or email us directly.
+                    </div>
+                </form>
+            </div>
+            <div style="margin-top: 2rem;">
+                <p style="margin-bottom: 1rem; opacity: 0.8;">Free resources for subscribers:</p>
+                <p>✨ Changemaker Archetype chapter</p>
+                <p>✨ Guided meditation (audio)</p>
+                <p>✨ The Vitality Guide</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-cream">
+        <div class="wrap">
+            
+            <!-- MANIFESTO -->
+            <div class="bio-section" style="background: var(--deep-earth); color: white; padding: 3rem; border-radius: 15px; text-align: center; margin-bottom: 4rem;">
+                <h2 style="color: var(--gold); margin-bottom: 2rem;">Shamanic Kundalini Yoga</h2>
+                <p style="font-size: 1.3rem; line-height: 1.8; margin-bottom: 1.5rem; font-style: italic;">
+                    is resilience<br>
+                    is devotion<br>
+                    is power
+                </p>
+                <p style="margin: 2rem 0; font-size: 1.1rem;">
+                    To strengthen the pathways that will carry us through.<br>
+                    Turn up the volume on your own frequency.<br>
+                    Move through the chakras. Clear the static.
+                </p>
+                <p style="font-size: 1.1rem;">
+                    Breathe, shake, soften, laugh, rest and recalibrate.
+                </p>
+                <p style="margin-top: 2rem; font-weight: 500; color: var(--gold);">
+                    Shamanic Kundalini Yoga. Breathwork. Sound. Nervous system repair. Medicine.
+                </p>
+            </div>
+
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="bio-section">
+                <h3>1. What is shamanic kundalini yoga?</h3>
+                <p>Shamanic kundalini yoga blends ancient kundalini practices with shamanic wisdom. It combines breathwork, movement, meditation and energy work to activate your life force, release what no longer serves and reconnect you to your deepest self. Unlike traditional kundalini yoga, shamanic kundalini integrates ceremony, sound healing and earth-based practices.</p>
+                <p style="margin-top: 1rem; font-weight: 500;">Shamanic kundalini yoga is a combination of breath, movement and rest:</p>
+                <p style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                    • <strong>BREATH</strong> to regulate the nervous system<br>
+                    • <strong>MOVEMENT</strong> so the body remembers<br>
+                    • <strong>REST</strong> to integrate
+                </p>
+            </div>
+
+            <div class="bio-section">
+                <h3>2. What are the benefits of shamanic kundalini yoga?</h3>
+                <p>Shamanic kundalini yoga helps you:</p>
+                <p style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                    • Rewire the nervous system<br>
+                    • Strengthen neural pathways of resilience<br>
+                    • Help the body learn how to find safety again
+                </p>
+                <p style="margin-top: 1rem;">This is <strong>powerful, embodied soul work.</strong> If your soul is craving warmth, rhythm, truth,if your body needs a full-body release and reset,if your mind is craving clarity,this practice is for you.</p>
+            </div>
+
+            <div class="bio-section">
+                <h3>3. What do we learn in shamanic kundalini yoga?</h3>
+                <p style="font-weight: 500; margin-bottom: 1rem;">We take a journey within to a place of remembering and peacefulness, where calm, clarity and courage become embodied in a new lightness of being.</p>
+                <p style="margin-left: 1.5rem; margin-top: 0.5rem;">
+                    • Rising power of kundalini energy<br>
+                    • Alchemy of breath, frequency and embodiment<br>
+                    • Deep roots of ethics and integrity<br>
+                    • Anchoring within the medicine wheel<br>
+                    • Shamanism as a living reality
+                </p>
+            </div>
+
+            <div class="bio-section">
+                <h3>4. Why does this matter now?</h3>
+                <p style="font-weight: 500;">People feel misaligned with the state of the world, overwhelmed or overstimulated, and need a safe space to just be.</p>
+                <p style="margin-top: 1rem;">Shamanic kundalini yoga and breathwork offer soul rest,a chance to regulate, remember, and recalibrate. This practice strengthens the pathways that will carry us through.</p>
+            </div>
+
+            <div class="bio-section">
+                <h3>5. How do I know which offering is right for me?</h3>
+                <p>The best way to know is through a free discovery call. We'll explore where you are, what's calling you inward and which approach feels most aligned. Some people know immediately they want a retreat immersion, whilst others prefer to begin with 1:1 mentorship or join a moon circle first. Trust your instinct.</p>
+            </div>
+
+            <div class="bio-section">
+                <h3>6. I've never done breathwork or kundalini before. Are your offerings suitable for beginners?</h3>
+                <p>Absolutely. All practices are adapted to meet you where you are. Whether you're new to embodied practices or experienced in yoga and meditation, I create space for your unique journey. If you are ready to journey within, you are ready for shamanic kundalini yoga.</p>
+            </div>
+
+            <div class="bio-section">
+                <h3>7. What are the seven changemaker archetypes?</h3>
+                <p>The seven archetypes,Activist, Organiser, Expert, Campaigner, Storyteller, Guide and Leader,represent different ways we create change in the world. Each is connected to a chakra energy centre. Understanding your dominant archetype helps you lead from your natural strengths rather than forcing yourself into moulds that don't fit. You can discover your archetype in The Feminine Shift.</p>
+            </div>
+
+            <div class="bio-section">
+                <h3>8. Can everyone benefit from feminine leadership principles?</h3>
+                <p>Yes. Feminine strengths,empathy, collaboration, emotional intelligence, systems thinking,are essential for all humans, regardless of gender. These are essential skills, learnable and necessary to bring balance to ourselves and to the world.</p>
+            </div>
+
+            <div class="bio-section">
+                <h3>9. Do you work with clients remotely, or only in person?</h3>
+                <p>Both. I offer remote sessions via video call for leadership coaching, 1:1 mentorship, breathwork journeys and shamanic kundalini yoga. Moon circles, sacred ceremonies and kundalini classes take place in Brussels. Retreats are in-person immersive experiences in Ibiza and other sacred sites in Europe.</p>
+            </div>
+
+
+            <div class="bio-section">
+                <h3>10. How do I stay updated about upcoming retreats and events?</h3>
+                <p>Join our mailing list by clicking "Join the Wait List" anywhere on this site. You'll receive updates about retreat dates, moon ceremonies, online circles and insights from The Feminine Shift journey,plus access to free resources.</p>
+            </div>
+
+            <div class="bio-section">
+                <h3>11. What if I'm not a "leader" or "changemaker"? Is this work still for me?</h3>
+                <p>If you're navigating transition, seeking deeper meaning, outgrowing old patterns or feeling called to something more,this work is for you. You don't need a title or decades of achievement. You just need to be ready to remember who you are beneath all the doing.</p>
+            </div>
+
+            <div class="bio-section">
+                
+                <div style="background: var(--warm-cream); padding: 3rem; border-radius: 15px; margin: 3rem 0; box-shadow: 0 6px 25px rgba(107, 78, 61, 0.08);">
+                <h3 style="text-align: center; margin-bottom: 1.5rem;">Join The Feminine Shift</h3>
+                <p style="text-align: center; margin-bottom: 2rem;">Be the first to receive news on Joanna's book, The Feminine Shift, published 22 April 2026, and learn about upcoming Feminine Shift events</p>
+                
+                <form name="book-waitlist" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field" style="max-width: 500px; margin: 0 auto;" onsubmit="handleBookWaitlistSubmit(event)">
+                    <input type="hidden" name="form-name" value="book-waitlist">
+                    <p style="display: none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    <div class="form-group">
+                        <label>Name *</label>
+                        <input type="text" name="name" id="book-name" required>
+                        <span class="error-message" id="book-name-error">Please enter your name</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" name="email" id="book-email" required>
+                        <span class="error-message" id="book-email-error">Please enter a valid email address</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Join The Waitlist</button>
+                    <p class="gdpr-notice" style="margin-top: 1rem; font-size: 0.85rem;">
+                        By joining, you'll receive updates about Feminine Shift events. You can unsubscribe at any time.
+                    </p>
+                    <div class="success-message" id="book-success">
+                        ✓ Thank you! You'll be the first to hear about The Feminine Shift.
+                    </div>
+                    <div class="error-message" id="book-network-error" style="display:none; margin-top:1rem;">
+                        Something went wrong. Please try again or email us directly.
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+
+<!-- MY JOURNEY PAGE -->
+<div id="journey" class="page">
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <h1>My Journey</h1>
+            <p class="sub">Awakening to Wholeness</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="bio-section">
+                <p>For thirty years, I worked at the heart of global transformation, navigating the corridors of power, advocating for climate action, nature restoration and healthy food systems, and founding Conscience, Brussels' first sustainability agency to champion ambitious protection of Mother Earth.</p>
+
+                <p>Through this work, I discovered a profound truth: We cannot create the world we long for whilst running on empty. Lasting change requires us to lead from wholeness, not depletion.</p>
+
+                <p>It became clear the leaders and changemakers I was advising needed more than strategy: they needed to move towards vitality, build nervous system resilience and lead from their full capacity.</p>
+
+                <h3>Awakening</h3>
+
+                <p>My awakening to myself began with my children. Whilst the birth of my twin sons showed me that their future depended on a better world, inspiring my career shift to sustainability, it was the birth of my daughter that awoke me to the deep injustice of the Divine Feminine. This moved me to campaign also for social justice and, ultimately, to reclaim the sacred energy of the Divine Feminine within myself, shifting my focus from outer protest to inner power.</p>
+
+                <p>But like many women, after decades of taking care of everyone else, I found myself outgrowing relationships that no longer nourished me. I needed to remember who I was beneath all the doing.</p>
+
+                <h3>The Journey</h3>
+
+                <p>This longing to nurture my own soul led me on a decade-long journey, travelling from the corridors of power to the sacred sites of India, Peru, Mexico, Egypt, China and Japan. I studied ancient wisdom and somatic practices, discovering how to bridge the power of the intellect with the intelligence of the heart.</p>
+
+                <p>These two worlds, once separate, have now converged into a single path. I now understand that global transformation and personal transformation are inseparable. Without inner peace, how can we attain the conditions for world peace.</p>
+
+                <h3>CONSCIENCIA</h3>
+
+                <p>My offering, CONSCIENCIA, is the culmination of this integration. Today I help changemakers driving systemic transformation step into their fullest vitality and power through embodied practices that release what no longer serves, recalibrate the nervous system and reconnect them to their deepest wisdom,so they can live and lead from joy, purpose and lasting impact.</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a onclick="showPage('offerings')" class="btn btn-primary">Explore Offerings</a>
+                <a onclick="showPage('home')" class="btn btn-secondary">Back to Home</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- OFFERINGS PAGE -->
+<div id="offerings" class="page">
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <h1>Offerings</h1>
+            <p class="sub">Pathways to Transformation</p>
+            <p class="desc">I help you rest, reflect and reset so you may step into your power with clarity and courage</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div style="max-width: 900px; margin: 0 auto 4rem; text-align: center;">
+                <h2>Your Path is Unique</h2>
+                <p style="font-size: 1.1rem; margin: 1.5rem 0;">You didn't come this far to feel powerless.</p>
+                <p>Challenging dynamics call for dynamic clarity. Whether you're navigating a major transition, seeking to deepen your leadership or ready to reclaim your authentic power, we'll design the right path for you.</p>
+                <p style="margin-top: 1.5rem; font-style: italic;">Every journey begins with a conversation.</p>
+                <a onclick="showPage('contact')" class="btn btn-primary" style="margin-top: 1.5rem;">Book a Discovery Call</a>
+            </div>
+
+            <h2 class="section-title">How We Might Work Together</h2>
+
+            <div class="bio-section" style="margin-top: 3rem;">
+                <h3>The Leader's Reset</h3>
+                <p style="font-style: italic; color: var(--sage); margin-bottom: 1rem;">You've built something significant. Now you're ready to lead from a deeper place.</p>
+                <p><strong>Who it's for:</strong> Accomplished leaders navigating transition or seeking to lead from a place of wholeness and clarity.</p>
+                <p><strong>What it includes:</strong> One-to-one coaching sessions combining conscious leadership principles with somatic practices, breathwork and nervous system regulation. We work together to move you towards vitality.</p>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a onclick="showPage('contact')" class="btn btn-secondary">Register Interest for Leadership Coaching</a>
+                </div>
+            </div>
+
+            <div class="bio-section" style="margin-top: 2.5rem;">
+                <h3>Soul Reclamation</h3>
+                <p style="font-style: italic; color: var(--sage); margin-bottom: 1rem;">After decades of achieving, you're ready to remember.</p>
+                <p><strong>Who it's for:</strong> High-achievers ready for deep personal transformation,moving beyond accomplishment into remembering who you are beneath all the doing.</p>
+                <p><strong>What it includes:</strong> Intensive one-to-one mentorship blending life coaching, shamanic kundalini practices, breathwork, ceremony and energy healing. Together we release what no longer serves, recalibrate your nervous system and reconnect you to your deepest wisdom.</p>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a onclick="showPage('contact')" class="btn btn-secondary">Register Interest for 1:1 Mentorship</a>
+                </div>
+            </div>
+
+            <div class="bio-section" style="margin-top: 2.5rem;">
+                <h3>Breathwork Immersions</h3>
+                <p style="font-style: italic; color: var(--sage); margin-bottom: 1rem;">Your body holds the wisdom. Your breath unlocks it.</p>
+                <p><strong>Who it's for:</strong> Anyone seeking somatic release, energy activation and nervous system regulation through the power of conscious breath.</p>
+                <p><strong>What it includes:</strong> Group and individual breathwork sessions using shamanic kundalini techniques to unlock stuck energy, process emotions somatically and access deeper states of consciousness and healing.</p>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a onclick="showPage('contact')" class="btn btn-secondary">Register Interest for Breathwork</a>
+                </div>
+            </div>
+
+            <div class="bio-section" style="margin-top: 2.5rem;">
+                <h3>Sacred Circles</h3>
+                <p style="font-style: italic; color: var(--sage); margin-bottom: 1rem;">The healing that happens in circle is unlike any other.</p>
+                <p><strong>Who it's for:</strong> Women seeking community, ritual and sacred space to explore the Divine Feminine, share authentically and heal in circle.</p>
+                <p><strong>What it includes:</strong> Monthly moon circles and seasonal women's gatherings in Brussels and online. We gather for ceremony, sharing, breathwork, meditation and collective healing aligned with lunar cycles.</p>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a onclick="showPage('contact')" class="btn btn-secondary">Register Interest for Moon Circles</a>
+                </div>
+            </div>
+
+            <div class="bio-section" style="margin-top: 2.5rem;">
+                <h3>Transformation Retreats</h3>
+                <p style="font-style: italic; color: var(--sage); margin-bottom: 1rem;">Step away to come home to yourself.</p>
+                <p><strong>Who it's for:</strong> Those ready for immersive, multi-day transformation in sacred locations.</p>
+                <p><strong>What it includes:</strong> Transformational retreats in Ibiza, France, Italy, Switzerland and other sacred sites. Deep healing work combining all modalities in intimate, curated settings.</p>
+                <p style="margin-top: 1rem;"><strong>Upcoming:</strong></p>
+                <p>• Ibiza, October 2026: Reclaiming the Divine Feminine (5 days)</p>
+
+                <p>• France, Italy & Switzerland: Dates to be announced</p>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a onclick="showPage('retreats')" class="btn btn-primary">Explore Retreats</a>
+                </div>
+            </div>
+
+            <div class="bio-section" style="margin-top: 2.5rem;">
+                <h3>Transformation Courses</h3>
+                <p style="font-style: italic; color: var(--sage); margin-bottom: 1rem;">Invest in your inner peace</p>
+                <p><strong>Who it's for:</strong> Those ready for clarity and creativity, and wanting to work together in community.</p>
+                <p><strong>What it includes:</strong> Strategic circles that invite us to awaken intuition and self-knowledge. Together we build resilience and spark transformation.</p>
+                <p style="margin-top: 1rem;"><strong>Offerings include:</strong></p>
+                <p>• Saturday Circle: "Clarity and Calm" - Weekly Kundalini Online (starts May 30)</p>
+                <p>• Mellow Monday: "Relaxation and Rest" - Weekly Nidra Online (starts June 1)</p>
+                <p>• 7-Week "Chakra Cultivation" Series - In Person (starts June 27 or August 15)</p>
+                <p>• 21-Day "Deep into Recovery" - Online Nightly Nidra (November)</p>
+                <p>• 21-Day Winter Palace "Goddess Glow" - Online Mornings (January)</p>
+                <p>• New Moon Magic - Monthly In Person Ceremonial Sound Workshops</p>
+                <p>• Medicine Wheel Workshops - In Person Gatherings on Special Occasions</p>
+                <p>• 1:2 Energetic Healing for Couples</p>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a onclick="showPage('contact')" class="btn btn-secondary">Register Interest for Courses</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <h3>Not Sure Where to Begin?</h3>
+                <p style="margin: 1.5rem 0;">Let's talk. In a free discovery call, we'll explore where you are, where you want to go and design the right path for your unique journey.</p>
+                <a onclick="showPage('contact')" class="btn btn-primary">Book a Discovery Call</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- RETREATS PAGE -->
+<div id="retreats" class="page">
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <h1>Transformational Retreats</h1>
+            <p class="sub">Deep healing in sacred spaces</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="bio-section">
+                <h2 style="text-align: center; margin-bottom: 2rem;">What Makes These Retreats Transformational</h2>
+                <p>After thirty years leading global change and a decade journeying through sacred sites, I've learned that true transformation requires us to step away from the demands of daily life and create space for deep healing.</p>
+                <p>My retreats offer a carefully crafted balance between guided exploration and self-discovery. This isn't about someone telling you what to do,it's about creating the conditions for you to remember who you are beneath all the doing.</p>
+                <p>Grounded in ethical values, each retreat weaves together ancient wisdom and embodied practices: Shamanic Kundalini yoga, breathwork and meditation, journeying with sound and frequency,drumming and crystal bowl sound baths, ceremony and energy healing, walks in pristine nature,countryside rambles, sea swimming, coastal paths through nature reserves, and time to witness beautiful sunsets and sunrises. Fresh air, space and silence.</p>
+                <p>Swimming in the healing waters off Ibiza's coast, walking in pristine nature, every element is designed to reconnect you to your body, your breath and your deepest wisdom.</p>
+                
+                <h3 style="margin-top: 2rem;">A Curated Blend of Privacy and Shared Experience</h3>
+                <p>You'll have time alone for reflection and integration, alongside the profound healing that happens in circle with like-minded souls. Thoughtful aesthetics, warm and kind hosts, exquisite accommodation,every detail matters.</p>
+                
+                <h3 style="margin-top: 2rem;">Fully Immersive, Fully Supported</h3>
+                <p>Once you've booked, everything is arranged: transfers, accommodation, all classes and experiences, nourishing biodynamic meals and drinks. You can fully surrender into the healing experience without thinking about logistics.</p>
+                <p>This is your time to rest, reflect, reset,and return home transformed.</p>
+            </div>
+
+
+
+            <div class="bio-section" style="margin-top: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Why CONSCIENCIA is Different</h2>
+                
+                <p style="margin-bottom: 1.5rem;">Most retreats offer relaxation. CONSCIENCIA offers transformation.</p>
+                
+                
+                
+                <p style="margin-bottom: 1.5rem;">CONSCIENCIA bridges the world of global systems with the wisdom of the soul,offering shamanic kundalini yoga, breathwork, and conscious leadership work for changemakers who are here to reshape our world.</p>
+                
+                <p>This isn't about escaping your life. It's about returning to it with clarity, power, and purpose.</p>
+            </div>
+
+            <!-- TESTIMONIAL -->
+            <div class="bio-section" style="margin-top: 3rem; background: white; border-left: 4px solid var(--mocha);">
+                <p style="font-style: italic; line-height: 1.8; margin-bottom: 1.5rem;">"Joanna: you are truly gifted. Born to be a Kundalini Goddess. Your voice,inner and physical; the ways in which you combine the spiritual and physical; how clearly and simply you explain the breaths and movements; the music you choose; the atmosphere you create; the beauty with which you surround us; the care you give; the time spent on each position… ALL of it is just magical. Thank you so much. I feel so relaxed and centered at the same time. Can't wait to learn from and experience more with you. WOW! No one would ever know that was the first class you give! Truly born to voice Kundalina. Thank you. Namaste."</p>
+                <p style="text-align: right; font-weight: 500; color: var(--mocha); font-size: 1.1rem;">, Sandra</p>
+            </div>
+
+
+            <div class="bio-section" style="margin-top: 3rem; background: var(--warm-cream);">
+                <h2 style="color: var(--mocha); text-align: center;">Set Your Intention</h2>
+                <p style="text-align: center; font-size: 1.1rem; margin-top: 1.5rem;">
+                    These retreats can be organised at the destination of your choice. Whether you're drawn to a specific sacred site or wish to gather your own group in a meaningful location, we can create a bespoke transformational experience tailored to your vision.
+                </p>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a onclick="showPage('contact')" class="btn btn-primary">Enquire About a Custom Retreat</a>
+                </div>
+            </div>
+
+            <div class="bio-section" style="margin-top: 3rem; background: var(--warm-cream);">
+                <h2 style="color: var(--mocha);">Ibiza: Reclaiming the Divine Feminine</h2>
+                <p><strong>Dates:</strong> October 2026 (5 days)<br>
+                <strong>Location:</strong> Hostal La Curandera, Salinas, Ibiza, Spain</p>
+                
+                <div class="img-ph" style="height: 300px; margin: 2rem 0;">
+                    <strong>IBIZA RETREAT IMAGE</strong><br>
+                    Hostal La Curandera or Ibiza coastline<br>
+                    Keywords: Ibiza retreat, divine feminine, sacred healing, Mediterranean wellness
+                </div>
+
+                
+                <div class="img-ph" style="height: 300px; margin: 2rem 0;">
+                    <strong>IBIZA RETREAT IMAGE</strong><br>
+                    Hostal La Curandera or Ibiza coastline<br>
+                    Keywords: Ibiza retreat, divine feminine, sacred healing, Mediterranean wellness
+                </div>
+
+                <p>For centuries, women have been the caregivers, the nurturers, the ones holding everything together. But who holds us?</p>
+                <p>This five-day retreat in the sacred landscape of Ibiza invites you to reclaim the Divine Feminine within,not as something you do for others, but as the source of your own power and nourishment.</p>
+                <p>Set in the tranquil beauty of Hostal La Curandera near Salinas, we'll gather as sisters to remember what we've forgotten: that our worth isn't measured by how much we give, but by how fully we embody our sacred truth. Through Shamanic Kundalini practices, breathwork, moon ceremony and sound healing, we'll release what no longer serves and reconnect to the wild, wise feminine that lives in each of us.</p>
+                <p>Days will unfold with a gentle rhythm. Mornings begin with practices to awaken your energy. Afternoons invite sea swimming in Ibiza's healing waters and walks through coastal nature reserves. Evenings are for ceremony and sharing in circle.</p>
+                <p>You'll witness breathtaking sunsets and sunrises, feel the earth beneath your feet, and remember: you are whole.</p>
+
+                <h4 style="margin-top: 2rem;">What's Included:</h4>
+                <p>• 5 days / 4 nights at Hostal La Curandera, Salinas<br>
+                • All transfers arranged<br>
+                • Nourishing biodynamic meals and drinks<br>
+                • Daily Shamanic Kundalini Yoga, breathwork & meditation<br>
+                • Sound journeys with drumming and crystal bowls<br>
+                • Ceremony and energy healing<br>
+                • Moon circle<br>
+                • Sea swimming and coastal walks in nature reserves<br>
+                • Free time for rest and integration<br>
+                • Intimate group (6-12 participants)</p>
+                
+                <p style="margin-top: 1.5rem; font-weight: 500;">Everything included,once booked, fully immerse in healing</p>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a onclick="showPage('contact')" class="btn btn-primary">Register Interest for Ibiza Retreat</a>
+                </div>
+                <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; font-style: italic;">(Upon interest, detailed agenda and specific dates will be provided)</p>
+            </div>
+
+            <div class="bio-section" style="margin-top: 3rem; background: var(--warm-cream);">
+                <h2 style="color: var(--mocha); text-align: center;">Upcoming Retreats</h2>
+                <p style="text-align: center; font-size: 1.1rem; margin-top: 1.5rem;">
+                    We are planning transformational retreats in France, Italy and Switzerland. Dates and locations to be announced.
+                </p>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="#newsletter" onclick="smoothScroll('newsletter')" class="btn btn-secondary">Join Our Mailing List for Updates</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a onclick="showPage('home')" class="btn btn-secondary">Back to Home</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- THE FEMININE SHIFT PAGE -->
+<div id="book" class="page">
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <h1>The Feminine Shift</h1>
+            <p class="sub">Women Leading Sustainability</p>
+            <p class="desc">Available 22 April 2026 | Published by Routledge</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="book-grid">
+                <div class="img-ph" style="height: 500px;">
+                    <strong>BOOK COVER</strong><br>
+                    Women Leading Sustainability:<br>
+                    The Feminine Shift<br>
+                    High-resolution book cover<br>
+                    Keywords: feminine leadership, sustainability, women in politics, EU policy, climate leadership
+                </div>
+                <div>
+                    <h2 style="margin-bottom: 1.5rem;">About the Book</h2>
+                    <p>Drawing on over 50 interviews with women shaping economic and political systems, Women Leading Sustainability: The Feminine Shift reveals seven changemaker archetypes each powered by unique leadership strengths. The book shows how inner alignment and intentional cooperation drive systemic transformation, offering a roadmap for collective momentum.</p>
+                    <p>Discover how feminine intelligence is reshaping leadership, sustainability and our collective future.</p>
+                    <div style="margin-top: 2.5rem;">
+                        <a href="#newsletter" onclick="smoothScroll('newsletter')" class="btn btn-primary">Download a Chapter</a>
+                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">(Available once book is published)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bio-section" style="background: var(--warm-cream);">
+                <h2>Praise for Women Leading Sustainability</h2>
+                
+                <div class="bio-section" style="background: white; margin-top: 1.5rem;">
+                    <p style="font-size: 1.1rem; font-style: italic;">"A powerful reframing of leadership. The Feminine Shift shows us why feminine values, like empathy, resilience and systems thinking, aren't 'soft' skills, but leadership essentials for climate action and beyond. This book is a spark for the leadership transformation our times demand."</p>
+                    <p style="color: var(--mocha); font-weight: 500; margin-top: 1rem;">, Sevim Aktas, Policy Officer, DG CLIMA European Commission</p>
+                </div>
+
+                <div class="bio-section" style="background: white;">
+                    <p style="font-size: 1.1rem; font-style: italic;">"Celebrating impactful women is essential as a reminder of what the European project could and should be to face twenty-first-century challenges."</p>
+                    <p style="color: var(--mocha); font-weight: 500; margin-top: 1rem;">, Sandrine Dixson-Declève, Global Ambassador Club of Rome, Executive Chair, Earth4All</p>
+                </div>
+
+                <div class="bio-section" style="background: white;">
+                    <p style="font-size: 1.1rem; font-style: italic;">"A compelling call to policymakers and business leaders to embrace inclusive leadership, and foster meaningful, lasting change across organisations and society."</p>
+                    <p style="color: var(--mocha); font-weight: 500; margin-top: 1rem;">, Erika Mink-Zaghloul, Head of Government Affairs, thyssenkrupp Steel Europe AG</p>
+                </div>
+
+                <div class="bio-section" style="background: white;">
+                    <p style="font-size: 1.1rem; font-style: italic;">"In a world that's constantly shifting, it feels more important than ever to stay grounded in human values and lead with purpose. I'm inspired by the women in this book who continue to drive change with heart, integrity and vision."</p>
+                    <p style="color: var(--mocha); font-weight: 500; margin-top: 1rem;">, Cecilia McAleavey, Vice President Global Public Affairs, Oatly</p>
+                </div>
+
+                <div class="bio-section" style="background: white;">
+                    <p style="font-size: 1.1rem; font-style: italic;">"Trump and Elon Musk put on full display how destructive leadership can be when dominated only by masculine traits. Joanna's book offers a powerful alternative. It is a guide for men ready to evolve, listen and learn from the wisdom of feminine intelligence: empathy, collaboration and intuition."</p>
+                    <p style="color: var(--mocha); font-weight: 500; margin-top: 1rem;">, Jonathan Barth, Co-Founder, ZOE Institute for Future-Fit Economies; Senior Advisor, Cambridge Institute for Sustainability Leadership</p>
+                </div>
+            </div>
+
+            <div class="bio-section">
+                <h2>Foreword by Elina Teboul</h2>
+                <p style="font-style: italic; margin-bottom: 1rem;">Author of Feminine Intelligence: How Visionary Leaders Can Reshape Business for Good</p>
+                <p style="font-size: 1.1rem;">"<em>Women Leading Sustainability: The Feminine Shift</em> is a book that does not merely make the case for feminine leadership,it proves it, with precision, rigour and heart… Joanna joins a lineage of women,and men,who are redefining what it means to lead. Her contribution is not only thoughtful and evidence-based; it is timely and vital."</p>
+            </div>
+
+            <div class="bio-section">
+                <h2>What's Inside</h2>
+                <h3>The Seven Changemaker Archetypes:</h3>
+                <p>• The Activist<br>
+                • The Organiser<br>
+                • The Expert<br>
+                • The Campaigner<br>
+                • The Storyteller<br>
+                • The Guide<br>
+                • The Leader</p>
+
+                <h3 style="margin-top: 2rem;">The Seven Strengths of Feminine Leadership:</h3>
+                <ul style="margin-left: 2rem; margin-top: 1rem;">
+                    <li>Resilience</li>
+                    <li>Empathy</li>
+                    <li>Emotional intelligence</li>
+                    <li>Visionary thinking</li>
+                    <li>Systems thinking</li>
+                    <li>Connectedness</li>
+                    <li>Creativity</li>
+                </ul>
+            </div>
+
+            <div class="bio-section" style="margin-top: 3rem; background: var(--warm-cream);">
+                <h2>Why I Wrote This Book</h2>
+                <p>Business as usual is no longer possible. Global heating is worsening, oceans are warming and peace is fragile. We are in a state of collective distress as instability, insecurity and inertia envelop us.</p>
+                <p style="font-style: italic; font-size: 1.2rem; margin: 1.5rem 0; color: var(--mocha);">What if the future were feminine?</p>
+                <p>I began my interviews in the summer of 2024, in the aftermath of political pushback on climate action and nature protection.</p>
+                <p>I observed the power and grace of women changemakers, their courage and determination, their optimism and raw hope. I noted their ways of working and their stamina, sustaining them like an invisible inner force.</p>
+                <p>I was called to celebrate and uplift these women changemakers, often working for decades resolutely, quietly, with creativity and determination. In doing so I discovered their shared superpowers. Their collective power came from the breath, from their energy centres, their life force within.</p>
+
+                <p>Once the chakras are aligned, everything is possible, the wheel starts to turn and unstoppable momentum is unleashed.</p>
+                <p>The 50 women I interviewed, and millions more like them, are powerful, and together they are unstoppable.</p>
+                <p style="margin-top: 2rem;">This book is in gratitude to the women who trusted me to tell their stories,it is their book. To the women who uplift me every day and the men who are already committed to a feminine future. To my beloved children Luc, Jasper and Penelope,you deserve a better future.</p>
+            </div>
+
+            <div class="bio-section" style="background: var(--warm-cream);">
+                <h2>For Leaders, Changemakers & The Next Generation</h2>
+                <p style="margin-bottom: 1.5rem;">This book is for:</p>
+                <p>• Women ready to step into their full power<br>
+                • Leaders seeking to integrate feminine intelligence into their work<br>
+                • Changemakers navigating the path from depletion to vitality<br>
+                • Entrepreneurs building regenerative businesses<br>
+                • Policymakers shaping sustainability and climate action<br>
+                • Educators and teachers inspiring the next generation<br>
+                • Young women and men pursuing careers in sustainability<br>
+                • Community organisers building movements for systemic change<br>
+                • Anyone ready to counterbalance toxic masculinity with feminine strengths</p>
+            </div>
+
+            <div class="bio-section">
+                <h2>Workshops & Speaking</h2>
+                <p style="margin-bottom: 1.5rem;">Joanna is available for:</p>
+                <p>• Book launch events and panel discussions<br>
+                • Workshops on the Seven Changemaker Archetypes<br>
+                • Leadership trainings on the Seven Strengths<br>
+                • Keynote speaking on feminine leadership and sustainability<br>
+                • Educational programmes for teachers and students</p>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a onclick="showPage('contact')" class="btn btn-primary">Invite Me to Speak</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a onclick="showPage('home')" class="btn btn-secondary">Back to Home</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- CONTACT PAGE -->
+<div id="contact" class="page">
+    <section class="hero" style="min-height: 40vh;">
+        <div class="hero-content">
+            <h1>Let's Begin the Conversation</h1>
+            <p class="sub">Every transformation starts with connection</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="form-box">
+                <h3 style="text-align: center; margin-bottom: 2rem;">Book Your Free Discovery Call</h3>
+                <form name="contact" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field" onsubmit="handleContactSubmit(event)">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p style="display: none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    <div class="form-group">
+                        <label>First Name *</label>
+                        <input type="text" name="firstName" id="contact-firstname" required>
+                        <span class="error-message" id="contact-firstname-error">Please enter your first name</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Surname *</label>
+                        <input type="text" name="surname" id="contact-surname" required>
+                        <span class="error-message" id="contact-surname-error">Please enter your surname</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" name="email" id="contact-email" required>
+                        <span class="error-message" id="contact-email-error">Please enter a valid email address</span>
+                    </div>
+                    <div class="form-group">
+                        <label>I'm interested in... *</label>
+                        <select name="interest" id="contact-interest" required>
+                            <option value="">Please select...</option>
+                            <option>Leadership Coaching</option>
+                            <option>1:1 Healing &amp; Mentorship</option>
+                            <option>Breathwork Journeys</option>
+                            <option>Moon Circles &amp; Women's Gatherings</option>
+                            <option>Transformational Retreats</option>
+                            <option>Speaking/Workshops</option>
+                            <option>Just Connecting</option>
+                        </select>
+                        <span class="error-message" id="contact-interest-error">Please select your interest</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Tell me about where you are and what's calling you inward...</label>
+                        <textarea name="message" id="contact-message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send My Enquiry</button>
+                    <p class="gdpr-notice">
+                        Your information will never be shared with third parties. By submitting this form, you consent to be contacted about your enquiry.
+                        You can unsubscribe from communications at any time.
+                    </p>
+                    <div class="success-message" id="contact-success">
+                        ✓ Thank you! Your enquiry has been sent. I'll be in touch soon.
+                    </div>
+                    <div class="error-message" id="contact-network-error" style="display:none; margin-top:1rem;">
+                        Something went wrong. Please try again or email us directly.
+                    </div>
+                </form>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <h3 style="margin-bottom: 1.5rem;">Other Ways to Connect</h3>
+                <p style="margin: 1rem 0;"><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#d2a6babbbcb9b1bdbca1b1bbb7bcb1b792bbb1bebda7b6fcb1bdbf" style="color: var(--mocha);"><span class="__cf_email__" data-cfemail="512539383f3a323e3f223238343f32341138323d3e24357f323e3c">[email&#160;protected]</span></a></p>
+                <p style="margin: 1rem 0;"><strong>Instagram:</strong> <a href="https://instagram.com/thinkconscience" style="color: var(--mocha);" target="_blank" rel="noopener">@thinkconscience</a></p>
+                <p style="margin: 1rem 0;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/joannamsullivan" style="color: var(--mocha);" target="_blank" rel="noopener">Joanna M Sullivan</a></p>
+                <p style="margin: 2rem 0;"><strong>Location:</strong> Brussels, Belgium (for in-person enquiries)</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+    <!-- TESTIMONIALS SECTION -->
+    <section style="background: var(--warm-cream); padding: 5rem 0;">
+        <div class="wrap">
+            <h2 style="text-align: center; margin-bottom: 3rem;">What People Say</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(107, 78, 61, 0.08);">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"Felt absolutely amazing, during and after the session! Totally deep relaxed but regenerated!"</p>
+                    <p style="text-align: right; font-weight: 500; color: var(--mocha);">, Sabine</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(107, 78, 61, 0.08);">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"Thank you, my daughter and I felt safe and guided on a journey of connection."</p>
+                    <p style="text-align: right; font-weight: 500; color: var(--mocha);">, Lena</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(107, 78, 61, 0.08);">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"Joanna, you are truly gifted. Your voice, the ways in which you combine the spiritual and physical, the atmosphere you create,ALL of it is just magical."</p>
+                    <p style="text-align: right; font-weight: 500; color: var(--mocha);">, Sandra</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <h2>CONSCIENCIA</h2>
+    <p style="margin: 2rem 0;">📍 Brussels | Working Worldwide | Retreats in Ibiza</p>
+    <p style="margin: 1.5rem 0;">
+        <a href="/cdn-cgi/l/email-protection#96e2fefff8fdf5f9f8e5f5fff3f8f5f3d6fff5faf9e3f2b8f5f9fb"><span class="__cf_email__" data-cfemail="ccb8a4a5a2a7afa3a2bfafa5a9a2afa98ca5afa0a3b9a8e2afa3a1">[email&#160;protected]</span></a><br style="margin: 0.5rem;">
+        <a href="https://instagram.com/thinkconscience" target="_blank" rel="noopener">@thinkconscience</a> | 
+        <a href="https://www.linkedin.com/in/joannamsullivan" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+    <p style="margin-top: 3rem; opacity: 0.8; font-size: 0.9rem;">© 2025 CONSCIENCIA | Joanna Sullivan</p>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Page Navigation
+function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+    });
+    document.getElementById(pageId).classList.add('active');
+    window.scrollTo(0, 0);
+    
+    // Close mobile menu if open
+    const menu = document.getElementById('nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+        hamburger.classList.remove('active');
+    }
+}
+
+// Mobile Menu Toggle
+function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+    menu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+}
+
+// Smooth Scroll
+function smoothScroll(targetId) {
+    const element = document.getElementById(targetId);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+// Email Validation
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+// Submit form to Netlify via fetch (keeps user on the SPA)
+function submitToNetlify(form, successId, errorId) {
+    fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(form)).toString()
+    })
+    .then(function(response) {
+        if (!response.ok) throw new Error('Submission failed');
+        document.getElementById(successId).style.display = 'block';
+        form.reset();
+    })
+    .catch(function() {
+        document.getElementById(errorId).style.display = 'block';
+    });
+}
+
+// Newsletter Form Handler
+function handleNewsletterSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const name = document.getElementById('newsletter-name');
+    const email = document.getElementById('newsletter-email');
+    let isValid = true;
+
+    // Reset errors scoped to this form
+    form.querySelectorAll('.error-message').forEach(function(el) { el.style.display = 'none'; });
+    form.querySelectorAll('input').forEach(function(el) { el.classList.remove('error'); });
+
+    if (!name.value.trim()) {
+        document.getElementById('newsletter-name-error').style.display = 'block';
+        name.classList.add('error');
+        isValid = false;
+    }
+    if (!validateEmail(email.value)) {
+        document.getElementById('newsletter-email-error').style.display = 'block';
+        email.classList.add('error');
+        isValid = false;
+    }
+
+    if (isValid) {
+        submitToNetlify(form, 'newsletter-success', 'newsletter-network-error');
+    }
+}
+
+// Book Waitlist Form Handler
+function handleBookWaitlistSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const name = document.getElementById('book-name');
+    const email = document.getElementById('book-email');
+    let isValid = true;
+
+    // Reset errors scoped to this form
+    form.querySelectorAll('.error-message').forEach(function(el) { el.style.display = 'none'; });
+    form.querySelectorAll('input').forEach(function(el) { el.classList.remove('error'); });
+
+    if (!name.value.trim()) {
+        document.getElementById('book-name-error').style.display = 'block';
+        name.classList.add('error');
+        isValid = false;
+    }
+    if (!validateEmail(email.value)) {
+        document.getElementById('book-email-error').style.display = 'block';
+        email.classList.add('error');
+        isValid = false;
+    }
+
+    if (isValid) {
+        submitToNetlify(form, 'book-success', 'book-network-error');
+    }
+}
+
+// Contact Form Handler
+function handleContactSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const firstName = document.getElementById('contact-firstname');
+    const surname = document.getElementById('contact-surname');
+    const email = document.getElementById('contact-email');
+    const interest = document.getElementById('contact-interest');
+    let isValid = true;
+
+    // Reset errors scoped to this form
+    form.querySelectorAll('.error-message').forEach(function(el) { el.style.display = 'none'; });
+    form.querySelectorAll('input, select').forEach(function(el) { el.classList.remove('error'); });
+
+    if (!firstName.value.trim()) {
+        document.getElementById('contact-firstname-error').style.display = 'block';
+        firstName.classList.add('error');
+        isValid = false;
+    }
+    if (!surname.value.trim()) {
+        document.getElementById('contact-surname-error').style.display = 'block';
+        surname.classList.add('error');
+        isValid = false;
+    }
+    if (!validateEmail(email.value)) {
+        document.getElementById('contact-email-error').style.display = 'block';
+        email.classList.add('error');
+        isValid = false;
+    }
+    if (!interest.value) {
+        document.getElementById('contact-interest-error').style.display = 'block';
+        interest.classList.add('error');
+        isValid = false;
+    }
+
+    if (isValid) {
+        submitToNetlify(form, 'contact-success', 'contact-network-error');
+    }
+}
+</script>
+
+</body>
+</html>
