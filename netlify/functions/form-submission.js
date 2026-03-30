@@ -2,7 +2,6 @@ const https = require("https");
 
 const FORM_TO_GROUP = {
   newsletter: process.env.MAILERLITE_GROUP_ID_NEWSLETTER,
-  "book-waitlist": process.env.MAILERLITE_GROUP_ID_BOOK_WAITLIST,
 };
 
 function httpsPost(url, payload, headers) {
@@ -38,8 +37,6 @@ exports.handler = async function (event) {
   } catch (e) {
     return { statusCode: 400, body: "Invalid JSON payload" };
   }
-
-  console.log("Full payload:", JSON.stringify(payload));
 
   const formName = (payload.data && payload.data["form-name"]) || payload.form_name || "";
   const name = (payload.data && payload.data.name) || "";
