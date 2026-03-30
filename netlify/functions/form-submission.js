@@ -39,6 +39,8 @@ exports.handler = async function (event) {
     return { statusCode: 400, body: "Invalid JSON payload" };
   }
 
+  console.log("Full payload:", JSON.stringify(payload));
+
   const formName = (payload.data && payload.data["form-name"]) || payload.form_name || "";
   const name = (payload.data && payload.data.name) || "";
   const email = (payload.data && payload.data.email) || "";
