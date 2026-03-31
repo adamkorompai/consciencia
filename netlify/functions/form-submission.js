@@ -2,6 +2,7 @@ const https = require("https");
 
 const FORM_TO_GROUP = {
   newsletter: process.env.MAILERLITE_GROUP_ID_NEWSLETTER,
+  "book-waitlist": process.env.MAILERLITE_GROUP_ID_BOOK_WAITLIST,
 };
 
 function httpsPost(url, payload, headers) {
