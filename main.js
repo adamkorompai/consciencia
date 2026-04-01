@@ -149,3 +149,20 @@ function handleContactSubmit(event) {
         submitToNetlify(form, 'contact-success', 'contact-network-error');
     }
 }
+
+// Ibiza gallery lightbox
+function openLightbox(src) {
+    const lb = document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src = src;
+    lb.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+});
