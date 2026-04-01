@@ -6,6 +6,17 @@ function showPage(pageId) {
     document.getElementById(pageId).classList.add('active');
     window.scrollTo(0, 0);
 
+    // Update active nav indicator
+    document.querySelectorAll('nav ul a').forEach(function(a) {
+        a.classList.remove('nav-active');
+    });
+    document.querySelectorAll('nav ul a[onclick*="' + pageId + '"]').forEach(function(a) {
+        a.classList.add('nav-active');
+    });
+
+    // Re-init scroll reveals for the newly visible page
+    setTimeout(initRevealObserver, 60);
+
     // Close mobile menu if open
     const menu = document.getElementById('nav-menu');
     const hamburger = document.querySelector('.hamburger');
@@ -166,3 +177,56 @@ function closeLightbox() {
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeLightbox();
 });
+
+// Scroll Reveal
+var revealObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            var el = entry.target;
+            if (el.classList.contains('manifesto-lines')) {
+                el.querySelectorAll('.manifesto-line').forEach(function(line) {
+                    line.classList.add('visible');
+                });
+            } else {
+                el.classList.add('visible');
+            }
+            revealObserver.unobserve(el);
+        }
+    });
+}, { threshold: 0.12 });
+
+function initRevealObserver() {
+    document.querySelectorAll('.reveal:not(.visible)').forEach(function(el) {
+        revealObserver.observe(el);
+    });
+    document.querySelectorAll('.manifesto-lines:not([data-observed])').forEach(function(el) {
+        el.setAttribute('data-observed', '1');
+        revealObserver.observe(el);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initRevealObserver();
+    // Set home as active nav item on load
+    var homeLink = document.querySelector('nav ul a[onclick*="home"]');
+    if (homeLink) homeLink.classList.add('nav-active');
+});
+
+// FAQ Accordion
+function toggleFaq(btn) {
+    var item = btn.closest('.faq-item');
+    var answer = item.querySelector('.faq-answer');
+    var isOpen = item.classList.contains('open');
+
+    // Close all open items
+    document.querySelectorAll('.faq-item.open').forEach(function(openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-answer').style.maxHeight = '0';
+    });
+
+    // Open the clicked item if it was closed
+    if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+}
