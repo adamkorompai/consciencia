@@ -265,7 +265,7 @@
             text-align: center;
             max-width: 900px;
             margin: 0 auto 3.5rem;
-            color: var(--deep-earth);
+            color: var(--charcoal);
         }
 
         /* Image Placeholders */
@@ -592,7 +592,7 @@
         }
 
         .hero-home-text {
-            padding: 7rem 4rem 7rem 6rem;
+            padding: 6rem 3rem 6rem 4rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -611,12 +611,12 @@
 
         .hero-home-h1 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(3rem, 5.5vw, 6.5rem);
+            font-size: clamp(2.8rem, 4.5vw, 5.5rem);
             font-weight: 300;
-            line-height: 1.05;
+            line-height: 1.15;
             color: var(--charcoal);
             margin-bottom: 2rem;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
         }
 
         .hero-home-h1 em {
@@ -655,19 +655,27 @@
         }
 
         @media (max-width: 900px) {
+            .hero-home {
+                min-height: unset;
+            }
             .hero-home-inner {
                 grid-template-columns: 1fr;
             }
-            .hero-home-portrait {
-                height: 65vw;
-                min-height: 300px;
-                order: -1;
-            }
             .hero-home-text {
-                padding: 3.5rem 2rem;
+                padding: 3.5rem 1.5rem 2.5rem;
+                order: 1;
+            }
+            .hero-home-portrait {
+                height: 72vw;
+                min-height: 260px;
+                max-height: 480px;
+                order: 2;
             }
             .hero-home-h1 {
-                font-size: clamp(2.8rem, 8vw, 4rem);
+                font-size: clamp(2.8rem, 9vw, 4rem);
+            }
+            .hero-home-body {
+                font-size: 1rem;
             }
         }
 
@@ -705,6 +713,27 @@
             margin-bottom: 1.5rem;
             filter: sepia(10%) saturate(88%);
             transition: filter 0.4s;
+        }
+
+        @media (max-width: 768px) {
+            .credential-panel img {
+                height: 300px;
+            }
+            .credential-panel--flip {
+                display: flex;
+                flex-direction: column;
+            }
+            .credential-panel--flip img {
+                order: 2;
+                margin-top: 1.5rem;
+                margin-bottom: 0;
+            }
+            .credential-panel--flip h3 {
+                order: 0;
+            }
+            .credential-panel--flip p {
+                order: 1;
+            }
         }
 
         .credential-panel:hover img {
@@ -753,10 +782,8 @@
 
         .audience-section .section-title {
             color: var(--warm-cream);
-            opacity: 0.65;
-            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-size: clamp(1.8rem, 3.5vw, 3rem);
             font-weight: 300;
-            font-style: italic;
             margin-bottom: 5rem;
         }
 
@@ -880,15 +907,13 @@
         }
 
         .manifesto-label {
-            font-family: 'Raleway', sans-serif;
-            font-size: 0.75rem;
-            font-weight: 500;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            color: var(--mocha);
-            margin-bottom: 4rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.8rem, 6vw, 6rem);
+            font-weight: 300;
+            color: var(--warm-cream);
+            margin-bottom: 3rem;
             display: block;
-            opacity: 0.8;
+            letter-spacing: 0;
         }
 
         .manifesto-lines {
@@ -898,10 +923,10 @@
         .manifesto-line {
             display: block;
             font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(4.5rem, 10vw, 11rem);
+            font-size: clamp(2rem, 4.5vw, 4.5rem);
             font-weight: 300;
             font-style: italic;
-            line-height: 1.0;
+            line-height: 1.15;
             color: var(--gold);
             opacity: 0;
             transform: translateY(22px);
@@ -918,7 +943,7 @@
 
         .manifesto-body {
             color: var(--warm-cream);
-            opacity: 0.55;
+            opacity: 0.85;
             font-size: 1.05rem;
             line-height: 1.95;
             max-width: 540px;
@@ -928,10 +953,10 @@
         .manifesto-footer {
             font-family: 'Cormorant Garamond', serif;
             font-style: italic;
-            color: var(--mocha);
+            color: var(--gold);
             font-size: 1.05rem;
             letter-spacing: 0.5px;
-            opacity: 0.75;
+            opacity: 1;
         }
 
         @media (max-width: 768px) {
@@ -1042,23 +1067,27 @@
         .newsletter-resources {
             display: flex;
             justify-content: center;
-            gap: 2.5rem;
-            margin-top: 2rem;
+            gap: 1rem;
+            margin-top: 1rem;
             flex-wrap: wrap;
         }
 
         .newsletter-resource {
-            font-size: 0.88rem;
-            color: var(--charcoal);
-            opacity: 0.65;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--deep-earth);
+            background: white;
+            border: 1px solid rgba(164, 120, 100, 0.25);
+            border-radius: 30px;
+            padding: 0.5rem 1.2rem;
             display: flex;
             align-items: center;
-            gap: 0.6rem;
+            gap: 0.5rem;
         }
 
         .newsletter-resource::before {
             content: '◆';
-            font-size: 0.45rem;
+            font-size: 0.4rem;
             color: var(--gold);
             opacity: 1;
         }
@@ -1117,18 +1146,15 @@
            TESTIMONIALS — pull-quote on deep earth
            ============================================ */
         .testimonials-section {
-            background: var(--deep-earth);
+            background: var(--warm-cream);
             padding: 8rem 2rem;
         }
 
         .testimonials-heading {
-            font-family: 'Raleway', sans-serif;
-            font-size: 0.75rem;
-            font-weight: 500;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            color: var(--gold);
-            opacity: 0.65;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.8rem, 6vw, 6rem);
+            font-weight: 300;
+            color: var(--charcoal);
             text-align: center;
             display: block;
             margin-bottom: 5rem;
@@ -1147,17 +1173,12 @@
             padding-left: 2rem;
         }
 
-        .testimonial-pullquote::before {
+        .testimonial-pullquote blockquote::before {
             content: '\201C';
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 7rem;
-            line-height: 1;
-            color: var(--mocha);
-            opacity: 0.2;
-            position: absolute;
-            top: -1.8rem;
-            left: -0.5rem;
-            pointer-events: none;
+        }
+
+        .testimonial-pullquote blockquote::after {
+            content: '\201D';
         }
 
         .testimonial-pullquote blockquote {
@@ -1166,7 +1187,7 @@
             font-style: italic;
             font-weight: 300;
             line-height: 1.55;
-            color: var(--warm-cream);
+            color: var(--charcoal);
             margin: 0 0 1.3rem 0;
         }
 
@@ -1176,8 +1197,8 @@
             font-weight: 500;
             letter-spacing: 2.5px;
             text-transform: uppercase;
-            color: var(--gold);
-            opacity: 0.7;
+            color: var(--mocha);
+            text-align: right;
         }
 
         .testimonial-pullquote.reveal:nth-child(2) { transition-delay: 0.15s; }
