@@ -161,12 +161,34 @@ function handleContactSubmit(event) {
     }
 }
 
-// Ibiza gallery lightbox
+// Ibiza gallery lightbox / slideshow
+var lightboxImages = [];
+var lightboxIndex = 0;
+
 function openLightbox(src) {
-    const lb = document.getElementById('lightbox');
-    document.getElementById('lightbox-img').src = src;
-    lb.style.display = 'flex';
+    lightboxImages = Array.from(document.querySelectorAll('.ibiza-gallery img')).map(function(img) { return img.src; });
+    lightboxIndex = lightboxImages.indexOf(src);
+    if (lightboxIndex === -1) lightboxIndex = 0;
+    showLightboxImage();
+    document.getElementById('lightbox').style.display = 'flex';
     document.body.style.overflow = 'hidden';
+}
+
+function showLightboxImage() {
+    document.getElementById('lightbox-img').src = lightboxImages[lightboxIndex];
+    document.getElementById('lightbox-counter').textContent = (lightboxIndex + 1) + ' / ' + lightboxImages.length;
+}
+
+function lightboxPrev(e) {
+    e.stopPropagation();
+    lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
+    showLightboxImage();
+}
+
+function lightboxNext(e) {
+    e.stopPropagation();
+    lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
+    showLightboxImage();
 }
 
 function closeLightbox() {
@@ -175,7 +197,11 @@ function closeLightbox() {
 }
 
 document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeLightbox();
+    if (document.getElementById('lightbox').style.display === 'flex') {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') { lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length; showLightboxImage(); }
+        if (e.key === 'ArrowRight') { lightboxIndex = (lightboxIndex + 1) % lightboxImages.length; showLightboxImage(); }
+    }
 });
 
 // Scroll Reveal
