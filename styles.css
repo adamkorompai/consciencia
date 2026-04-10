@@ -762,7 +762,15 @@
         .credential-panel h3 {
             color: var(--deep-earth);
             margin-bottom: 0.6rem;
-            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            font-size: clamp(0.95rem, 1.8vw, 2rem);
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .credential-panel h3 {
+                font-size: 1.5rem;
+                white-space: normal;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1287,15 +1295,17 @@
 }
 .journey-hero-inner {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     width: 100%;
 }
 .journey-hero-text {
-    padding: 6rem 3rem 6rem 8rem;
+    padding: 6rem 2rem 6rem 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    text-align: left;
 }
 .journey-hero-h1 {
     font-family: 'Cormorant Garamond', serif;
@@ -1317,10 +1327,9 @@
     letter-spacing: -0.01em;
 }
 .journey-hero-portrait {
-    overflow: hidden;
     display: flex;
     align-items: flex-start;
-    padding-right: 3rem;
+    padding: 0 11rem 0 2rem;
 }
 .journey-hero-portrait img {
     width: 100%;
@@ -2364,6 +2373,10 @@
 }
 .book-speaking-inner .book-archetype-list {
     margin-bottom: 2.5rem;
+}
+.book-speaking-inner .book-archetype-list li {
+    color: var(--charcoal);
+    border-bottom-color: rgba(164, 120, 100, 0.12);
 }
 .book-speaking-cta {
     text-align: center;
