@@ -517,68 +517,29 @@
 
         /* Ibiza gallery — stacked cards */
         .ibiza-gallery {
-            position: relative;
-            width: 100%;
-            max-width: 480px;
-            margin: 0 auto;
-            height: 320px;
-            cursor: pointer;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.75rem;
         }
 
         .ibiza-gallery img {
-            position: absolute;
             width: 100%;
-            height: 300px;
+            height: 160px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: opacity 0.2s;
             display: block;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-            transition: transform 0.3s ease, filter 0.4s;
         }
 
-        .ibiza-gallery .gallery-back-2 {
-            top: 0; left: 0;
-            transform: rotate(-4deg) translateY(6px);
-            z-index: 1;
-            filter: sepia(20%) saturate(80%) brightness(0.85);
-        }
-        .ibiza-gallery .gallery-back-1 {
-            top: 0; left: 0;
-            transform: rotate(2.5deg) translateY(3px);
-            z-index: 2;
-            filter: sepia(15%) saturate(85%) brightness(0.92);
-        }
-        .ibiza-gallery .gallery-front {
-            top: 0; left: 0;
-            transform: rotate(0deg);
-            z-index: 3;
-            filter: sepia(10%) saturate(88%);
-        }
-
-        .ibiza-gallery:hover .gallery-back-2 { transform: rotate(-6deg) translateY(10px); }
-        .ibiza-gallery:hover .gallery-back-1 { transform: rotate(4deg) translateY(6px); }
-        .ibiza-gallery:hover .gallery-front  { transform: scale(1.02); filter: sepia(0%) saturate(100%); }
-
-        .gallery-count {
-            position: absolute;
-            bottom: -2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            font-family: 'Raleway', sans-serif;
-            font-size: 0.78rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--mocha);
-            z-index: 4;
-            white-space: nowrap;
+        .ibiza-gallery img:hover {
+            opacity: 0.85;
         }
 
         @media (max-width: 600px) {
             .ibiza-gallery {
-                max-width: 100%;
-                height: 240px;
+                grid-template-columns: repeat(2, 1fr);
             }
-            .ibiza-gallery img { height: 220px; }
         }
 
         /* ============================================
@@ -1587,13 +1548,14 @@
 }
 .offerings-intro-lead {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+    font-style: italic;
     font-weight: 400;
     color: var(--deep-earth);
     margin-bottom: 1.2rem;
     line-height: 1.5;
 }
-.offerings-intro-text p {
+.offerings-intro-text p:not(.offerings-intro-lead) {
     font-size: var(--body-size);
     line-height: var(--body-line-height);
     color: var(--charcoal);
@@ -2260,10 +2222,13 @@
 .book-inside-inner {
     max-width: 900px;
     margin: 0 auto;
-    background: white;
+    background: var(--deep-earth);
     padding: 3rem;
-    border-radius: 15px;
-    box-shadow: 0 6px 25px rgba(107, 78, 61, 0.08);
+    border-radius: 4px;
+    box-shadow: 0 6px 25px rgba(107, 78, 61, 0.18);
+}
+.book-inside-inner .section-title {
+    color: var(--gold);
 }
 .book-inside-grid {
     display: grid;
@@ -2271,7 +2236,7 @@
     gap: 4rem;
 }
 .book-inside-col h3 {
-    color: var(--deep-earth);
+    color: var(--gold);
     font-size: clamp(1.2rem, 2.5vw, 1.65rem);
     margin-bottom: 1.5rem;
     font-weight: 300;
@@ -2284,22 +2249,12 @@
 .book-archetype-list li {
     font-size: var(--body-size);
     line-height: var(--body-line-height);
-    color: var(--charcoal);
-    padding: 0.35rem 0 0.35rem 1.4rem;
-    position: relative;
-    border-bottom: 1px solid rgba(164, 120, 100, 0.12);
+    color: var(--warm-cream);
+    padding: 0.35rem 0;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.2);
 }
 .book-archetype-list li:last-child {
     border-bottom: none;
-}
-.book-archetype-list li::before {
-    content: '·';
-    position: absolute;
-    left: 0;
-    color: var(--mocha);
-    font-weight: 700;
-    font-size: 1.2rem;
-    line-height: inherit;
 }
 
 .book-why {
