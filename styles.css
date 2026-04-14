@@ -1347,11 +1347,11 @@
     padding: 1rem 2rem 5rem;
 }
 .journey-prose {
-    max-width: 760px;
+    max-width: 680px;
     margin: 0 auto;
 }
 .journey-prose p {
-    font-size: 1.15rem;
+    font-size: var(--body-size);
     line-height: var(--body-line-height);
     color: var(--charcoal);
     margin-bottom: 1.5rem;
@@ -1883,7 +1883,7 @@
 .retreats-different-statement {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(1.15rem, 2vw, 1.55rem);
-    font-style: italic;
+    font-style: normal;
     font-weight: 300;
     color: var(--charcoal);
     line-height: 1.4;
